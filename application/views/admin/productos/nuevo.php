@@ -37,6 +37,10 @@
 														<label for="inputEmail4">Producto</label>
 														<input type="email" class="form-control form-control-sm" id="producto" placeholder="Nombre del producto">
 													</div>
+													<div class="form-group col-md-6">
+														<label for="inputEmail4">Número de modelo</label>
+														<input type="email" class="form-control form-control-sm" id="modelo" placeholder="716HK2UB-1100">
+													</div>
 													<div class="form-group col-md-12">
 														<label for="inputState">Categoria</label>
 														<select id="categorias" class="form-control form-control-sm">
@@ -59,24 +63,88 @@
 														<label for="inputState">Tamaño</label>
 													</div>
 													<div class="col">
-														<input type="text" class="form-control form-control-sm" id="categoria" placeholder="Agregar tamaño del producto">
+														<input type="text" class="form-control form-control-sm" id="tamano" placeholder="Agregar tamaño del producto (50cm x 70cm)">
+													</div>
+													<div class="col-auto">
+														<div class="form-check mb-2">
+															<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+															<label class="form-check-label" for="autoSizingCheck">
+																Mostrar
+															</label>
+														</div>
 													</div>
 													<div class="col">
 														<i class="fa-solid fa-circle-plus fa-2x" id="agregar_tamano"></i>
 													</div>
-													<div class="form-group col-md-12 mt-3" id="lista_tamanos">
+
+													<div class="form-group col-md-12 mt-3">
+														<ul id="lista_tamanos">
+														</ul>
+													</div>
+												</div>
+
+												<div class="form-row">
+													<div class="col-md-12">
+														<label for="inputState">Características</label>
+													</div>
+													<div class="col">
+														<input type="text" class="form-control form-control-sm" id="caracteristica" placeholder="Caracteristica">
+													</div>
+													<div class="col-auto">
+														<div class="form-check mb-2">
+															<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+															<label class="form-check-label" for="autoSizingCheck">
+																Mostrar
+															</label>
+														</div>
+													</div>
+													<div class="col">
+														<i class="fa-solid fa-circle-plus fa-2x" id="agregar_caracteristicas"></i>
+													</div>
+													<div class="form-group col-md-12 mt-3">
+														<ul id="lista_caracteristica">
+														</ul>
+													</div>
+												</div>
+
+												<div class="form-row">
+													<div class="col-md-12">
+														<label for="inputState">Colores</label>
+													</div>
+													<div class="col">
+														<input type="text" class="form-control form-control-sm" id="color" placeholder="Color">
+													</div>
+
+													<div class="col-auto">
+														<div class="form-check mb-2">
+															<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+															<label class="form-check-label" for="autoSizingCheck">
+																Mostrar
+															</label>
+														</div>
+													</div>
+													<div class="col">
+														<i class="fa-solid fa-circle-plus fa-2x" id="agregar_caracteristicas"></i>
+													</div>
+													<div class="form-group col-md-12 mt-3">
+														<ul id="lista_color">
+														</ul>
 													</div>
 												</div>
 
 
-
-
+												<div class="form-row">
+													<div class="form-group col-md-6">
+														<label for="inputEmail4">Imagenes</label>
+														<input type="file" class="form-control form-control-sm" id="imagen" placeholder="Nombre del producto">
+													</div>
+												</div>
 
 												<div class="form-group">
 													<label for="exampleFormControlTextarea1">Descripcion del producto</label>
 													<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 												</div>
-												<button type="submit" class="btn btn-primary">Agregar producto</button>
+												<button type="submit" class="btn btn-info btn-sm">Agregar producto</button>
 											</div>
 										</div>
 
