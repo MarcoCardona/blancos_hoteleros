@@ -138,6 +138,11 @@
 														<label for="inputEmail4">Imagenes</label>
 														<input type="file" class="form-control form-control-sm" id="imagen" placeholder="Nombre del producto">
 													</div>
+													<div class="form-group col-md-12 mt-3 pl-3" >
+														<div class="row" id="imageList">
+															
+														</div>
+													</div>
 												</div>
 
 												<div class="form-group">
