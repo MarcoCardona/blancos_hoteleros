@@ -15,7 +15,7 @@
     <link href="<?php echo base_url(); ?>assets/vendors/nprogress/nprogress.css" rel="stylesheet" />
 
     <!-- Custom Theme Style -->
-    <link href="<?php echo base_url(); ?>assets/build/css/custom.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/build/css/custom.css" rel="stylesheet" />
 
     <!-- Datetable-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />

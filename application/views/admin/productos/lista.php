@@ -3,7 +3,6 @@
 
 <?php $this->load->view('admin/sistema/head', $page['head']); ?>
 
-
 <body class="nav-md">
 	<div class="container body">
 		<div class="main_container">
@@ -39,13 +38,14 @@
 													<thead class="thead-dark">
 														<tr>
 															<th class="text-center" scope="col">No.</th>
-															<th scope="col">Categoria</th>
-															<th scope="col">Favorito</th>
+															<th scope="col">Producto</th>
+															<th scope="col">Modelo</th>
+															<th scope="col">Categorias</th>
 															<th scope="col">Status</th>
 															<th></th>
 														</tr>
 													</thead>
-													<tbody id="lista_categorias">
+													<tbody id="lista_productos">
 													</tbody>
 												</table>
 											</div>

@@ -12,6 +12,15 @@ class CategoriasModel extends CI_Model
         $this->tabla = 'categorias';
     }
 
+
+
+    // Método para obtener un usuario por su ID
+    public function obtener_por_id($id)
+    {
+        $query = $this->db->get_where($this->tabla, array('id' => $id));
+        return $query->row();
+    }
+
     public function getAll()
     {
         $this->db->select('*');

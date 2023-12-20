@@ -39,14 +39,17 @@
                         <a><i class="fa fa-home"></i> Categorias
                             <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="index.html">Lista de categorias</a></li>
+                            <li><a href="<?php echo base_url();?>/administrador/categorias/lista"">Lista de categorias</a></li>
+
                         </ul>
                     </li>
                     <li>
                         <a><i class="fa fa-edit"></i> Productos
                             <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="form.html">Lista de productos</a></li>
+                            <li><a href="<?php echo base_url();?>/administrador/productos/lista">Lista de productos</a></li>
+                            <li><a href="<?php echo base_url();?>/administrador/productos/nuevo">Nuevo producto</a></li>
+
                         </ul>
                     </li>
                 </ul>

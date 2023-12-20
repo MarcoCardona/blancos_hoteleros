@@ -67,7 +67,7 @@
 													</div>
 													<div class="col-auto">
 														<div class="form-check mb-2">
-															<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+															<input class="form-check-input" type="checkbox" id="check_tamano">
 															<label class="form-check-label" for="autoSizingCheck">
 																Mostrar
 															</label>
@@ -77,7 +77,7 @@
 														<i class="fa-solid fa-circle-plus fa-2x" id="agregar_tamano"></i>
 													</div>
 
-													<div class="form-group col-md-12 mt-3">
+													<div class="form-group col-md-12 mt-3 pl-4" id="group-list-tamanos">
 														<ul id="lista_tamanos">
 														</ul>
 													</div>
@@ -92,7 +92,7 @@
 													</div>
 													<div class="col-auto">
 														<div class="form-check mb-2">
-															<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+															<input class="form-check-input" type="checkbox" id="check_caracteristica">
 															<label class="form-check-label" for="autoSizingCheck">
 																Mostrar
 															</label>
@@ -101,8 +101,8 @@
 													<div class="col">
 														<i class="fa-solid fa-circle-plus fa-2x" id="agregar_caracteristicas"></i>
 													</div>
-													<div class="form-group col-md-12 mt-3">
-														<ul id="lista_caracteristica">
+													<div class="form-group col-md-12 mt-3 pl-4" id="group-list-carateristicas">
+														<ul id="lista_caracteristicas">
 														</ul>
 													</div>
 												</div>
@@ -117,17 +117,17 @@
 
 													<div class="col-auto">
 														<div class="form-check mb-2">
-															<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+															<input class="form-check-input" type="checkbox" id="check_colores">
 															<label class="form-check-label" for="autoSizingCheck">
 																Mostrar
 															</label>
 														</div>
 													</div>
 													<div class="col">
-														<i class="fa-solid fa-circle-plus fa-2x" id="agregar_caracteristicas"></i>
+														<i class="fa-solid fa-circle-plus fa-2x" id="agregar_color"></i>
 													</div>
-													<div class="form-group col-md-12 mt-3">
-														<ul id="lista_color">
+													<div class="form-group col-md-12 mt-3 pl-4" id="group-list-colores">
+														<ul id="lista_colores">
 														</ul>
 													</div>
 												</div>
@@ -147,9 +147,9 @@
 
 												<div class="form-group">
 													<label for="exampleFormControlTextarea1">Descripcion del producto</label>
-													<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+													<textarea class="form-control" id="descripcion" rows="3"></textarea>
 												</div>
-												<button type="submit" class="btn btn-info btn-sm">Agregar producto</button>
+												<button class="btn btn-info btn-sm" id="agregar_producto">Agregar producto</button>
 											</div>
 										</div>
 

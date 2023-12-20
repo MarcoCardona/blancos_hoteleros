@@ -50,9 +50,23 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+
+#Login de usuarios
+$route['administrador/login'] = 'UsuariosController/mostrar_login';
+$route['administrador/validar_sesion'] = 'UsuariosController/validarLogin';
+
+
+
+#Modulo de redes
+$route['administrador/redes/lista'] = 'RedesController';
+
+$route['administrador/redes/obtener'] = 'RedesController/obtener';
+
+
+
+
 #Modulo categorias
 $route['administrador/categorias/lista'] = 'CategoriasController';
-
 #Peticiones ajax categorias
 #Obtiene todas las categorias
 $route['administrador/categorias/getAll'] = 'CategoriasController/getAll';
@@ -73,15 +87,25 @@ $route['administrador/productos/nuevo'] = 'ProductosController/nuevo';
 
 #Peticiones ajax productos
 #Obtiene todos los productos
-$route['administrador/productos/getAll'] = 'ProductosController/getAll';
-#Agrega nueva categoria
-$route['administrador/productos/nueva'] = 'ProductosController/nueva';
-#Obtiene categoria
+$route['administrador/productos/obtener'] = 'ProductosController/obtener';
+#Agrega nueva productos
+$route['administrador/productos/insert'] = 'ProductosController/insert';
+#Obtiene productos
 $route['administrador/productos/get/(:any)'] = 'ProductosController/get/$1';
-#Update categoria
+#Update productos
 $route['administrador/productos/update/(:any)'] = 'ProductosController/update/$1';
 
 
-$route['default_controller'] = 'welcome';
+
+
+
+/***************Fronend Pagina */
+
+
+$route['producto/(:any)'] = 'BackendController/producto/$1';
+$route['bienvenido'] = 'BackendController/bienvenido';
+
+
+$route['default_controller'] = 'BackendController/bienvenido';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

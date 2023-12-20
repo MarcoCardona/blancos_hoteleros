@@ -1,17 +1,32 @@
-.fa-xmark{
+.fa-xmark {
     cursor: pointer;
 }
 
-.fa-circle-plus{
+.fa-circle-plus {
     color: rgb(17 167 136);
     cursor: pointer;
 }
 
-#lista_categorias, #lista_tamanos{
+#lista_categorias,
+#lista_tamanos,
+#lista_colores {
     width: 100%;
     height: 3rem;
     margin-bottom: 10px;
     padding: 10px 17px;
     background: white;
     border: 1px solid #E6E9ED;
+}
+
+#group-list-tamanos,
+#group-list-carateristicas,
+#group-list-colores {
+    height: 120px;
+    overflow-y: scroll;
+}
+
+#lista_tamanos li:hover,
+#lista_caracteristicas li:hover,
+#lista_colores li:hover {
+    cursor: pointer;
 }
